@@ -24,13 +24,9 @@ function Categories() {
                     <Text style={styles.subTitle}>Contrary to popular belief, Lorem Ipsum is not simply random text.</Text>
 
                     <RectButton style={styles.button}>
-                        <Text>Cadastre - se</Text>
+                        <Text>Login</Text>
                     </RectButton> 
 
-                    <RectButton style={styles.button}>
-                        <Text>Sou Dev</Text>
-                    </RectButton>
-            
                 </View>
 
                 <View style={styles.categoriesContainer}>
