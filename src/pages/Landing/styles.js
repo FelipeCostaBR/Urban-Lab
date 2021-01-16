@@ -61,7 +61,9 @@ const styles = StyleSheet.create({
     },
     categoryContainer: {
         width: 125,
-        marginBottom: 20
+        marginBottom: 20,
+
+        position: 'relative'
     },
     categoryImg: {
         resizeMode: 'contain',
@@ -71,6 +73,11 @@ const styles = StyleSheet.create({
         textAlign: 'center',
 
         marginTop: 5
+    },
+    categoryIcon: {
+        position: 'absolute',
+        top: 0,
+        right: 5
     }
     
 })
