@@ -3,10 +3,10 @@ import { TextInput } from 'react-native'
 
 import styles from './styles'
 
-function Login() {
+function Input() {
     return (
         <TextInput style={styles.input} />
     )
 }
 
-export default Login
+export default Input

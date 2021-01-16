@@ -6,7 +6,8 @@ const styles = StyleSheet.create({
         backgroundColor: "#ffffff",
         
         paddingLeft: 30,
-        paddingRight: 30
+        paddingRight: 30,
+        alignItems: 'center',
     },
     title: {
         color: "#000000",
@@ -18,7 +19,17 @@ const styles = StyleSheet.create({
     label: {
         fontSize: 18,
         marginBottom: 7,
-        marginLeft: 13
+        marginLeft: 13,
+        
+        width: '100%',
+        textAlign: 'left'
+    },
+    forgetPasswordText: {
+        color: '#6B38E5',
+
+        textAlign: 'center',
+        marginTop: 10,
+        marginBottom: 30
     }
     
 })

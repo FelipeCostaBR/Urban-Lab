@@ -2,6 +2,7 @@ import React from 'react'
 import { View, Text, TextInput } from 'react-native'
 import {RectButton} from 'react-native-gesture-handler'
 
+import Button from '../../components/Button'
 import Input from '../../components/Input'
 
 import styles from './styles'
@@ -17,15 +18,11 @@ function Login() {
             <Text style={styles.label}>Senha</Text>
             <Input />
 
-            <Text>Esqueceu sua senha?</Text>
+            <Text style={styles.forgetPasswordText}>Esqueceu sua senha?</Text>
 
-            <RectButton>
-                <Text>Entrar</Text>
-            </RectButton>
+            <Button text="Entrar" style={{marginBottom: 25}} />
 
-            <RectButton>
-                <Text>Cadastre - se</Text>
-            </RectButton>
+            <Button primary={false} text="Cadastrar-se" />
 
 
         </View>

@@ -1,9 +1,11 @@
 import React from 'react'
 import { View, Text, Image, ScrollView } from 'react-native'
-import { RectButton, TouchableOpacity } from 'react-native-gesture-handler'
+import { TouchableOpacity } from 'react-native-gesture-handler'
 import { useNavigation} from '@react-navigation/native'
 
 import styles from './styles'
+
+import Button from '../../components/Button'
 
 import {FontAwesome5} from '@expo/vector-icons'
 import LandingImg from '../../assets/images/landing.jpg'
@@ -32,9 +34,7 @@ function Landing() {
 
                     <Text style={styles.subTitle}>Contrary to popular belief, Lorem Ipsum is not simply random text.</Text>
 
-                    <RectButton style={styles.button} onPress={handleToLoginPage}>
-                        <Text>Login</Text>
-                    </RectButton> 
+                    <Button text="Cadastre-se" onPress={handleToLoginPage}/>
 
                 </View>
 
