@@ -2,55 +2,76 @@ import {StyleSheet} from 'react-native'
 
 const styles = StyleSheet.create({
     container: {
-        flex: 1,
-        
-        alignItems: 'center',
-        justifyContent: 'center',
+        flex: 1
+    },
+    landingImg: {
+        maxHeight: 250,
+        width: '100%',
+        resizeMode: "cover"
+    },
+    mainContent: {
+        backgroundColor: "#ffffff",
+        width: '85%',
 
-        backgroundColor: '#8257E5',
-        padding: 20,
+        marginTop: -70,
+        padding: 25,
 
+        alignSelf: 'center',
+
+        borderRadius: 15
     },
     mainWrapper: {
-        flex: 1,
-        width: "100%",
-
-        display: 'flex',
-        justifyContent: 'space-between',
+        alignItems: 'center',        
     },
-    beginJourneyContainer: {
-        flex: 1,
-
-        alignItems: 'center',
-        justifyContent: 'flex-end',
+    title: {
+        fontSize: 24,
+        lineHeight: 28,
+        
+        color: '#000000',
     },
-    verticalRow: {
-        height: 100,
-        width: 5,
+    subTitle: {
+        marginTop: 10,
+        lineHeight: 21,
+        color: "#000000",
 
-        backgroundColor: '#000',
-        alignSelf: 'center',
+        width: "85%",
     },
-    professionalCategoriesContainer: {
-        flex: 3,
-        alignItems: 'center',
-    },
-    categoryContainer: {
-        backgroundColor: '#C4C4C4',
-        borderRadius: 50,
+    button: {
+        backgroundColor: '#E98901',
+        borderRadius: 20,
 
-        width: '100%',
-        maxWidth: 200,
-        height: '100%',
-        maxHeight: 50,
+        width: '70%',
+        height: 43,
 
-        display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-
-        marginTop: 15,
-        marginBottom: 15
+        
+        marginTop: 20
     },
+    categoriesContainer: {
+        flex: 1,
+        marginBottom: 40,
+        marginTop: 20,
+        width: '100%',
+
+        alignItems: 'center',
+        flexWrap: "wrap",
+        flexDirection: "row",
+        justifyContent: "space-between",
+    },
+    categoryContainer: {
+        width: 125,
+        marginBottom: 20
+    },
+    categoryImg: {
+        resizeMode: 'contain',
+    },
+    categoryText: {
+        fontSize: 15,
+        textAlign: 'center',
+
+        marginTop: 5
+    }
     
 })
 

@@ -9,7 +9,7 @@ export default function App() {
   <>    
     <NotAuthBottomNavigation />
     
-    <StatusBar style="auto" />
+    <StatusBar style='auto' />
   </>
   );
 }
