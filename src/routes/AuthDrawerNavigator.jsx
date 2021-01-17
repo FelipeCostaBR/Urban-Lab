@@ -4,7 +4,7 @@ import { createDrawerNavigator, DrawerItem } from '@react-navigation/drawer';
 
 const {Navigator, Screen} = createDrawerNavigator();
 
-import Events from '../pages/Events'
+// import Events from '../pages/Events'
 import Users from '../pages/Users'
 import Profile from '../pages/Profile'
 
@@ -18,7 +18,7 @@ export default function App() {
         activeTintColor: "#05FD51"
       }}
       >
-    
+
         <Screen 
           name="Profile" 
           component={Profile} 
@@ -26,14 +26,14 @@ export default function App() {
             title: "Perfil",
           }}
         />
-
+{/* 
         <Screen 
           name="Events" 
           component={Events} 
           options={{
             title: "Eventos"
           }}
-        />
+        /> */}
         
         <Screen 
           name="Users" 

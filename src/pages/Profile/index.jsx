@@ -22,7 +22,7 @@ function Profile({navigation}) {
             </View>
 
             <View style={styles.userContainer}>
-                    <Image source={userImg} style={styles.userImg} />
+                <Image source={userImg} style={styles.userImg} />
                     
                     <View style={styles.userDescription}>
                 
@@ -32,18 +32,20 @@ function Profile({navigation}) {
                             <Text style={styles.infoTitle}>Localização:</Text>
                             <Text style={styles.infoValue}>Camaçari-BA</Text>
                         </View>
-
-                        <View style={styles.userInfo}>
-                            <Text style={styles.infoTitle}>Interesses:</Text>
-                            <Text style={styles.infoValue}>Matematica, Tecnologia, Ciencia</Text>
-                        </View>
                         
                     </View>
-                </View>
+            </View>
 
                 <View style={styles.othersInfo}>
-                    
-                        
+                                        
+                    <View style={{marginBottom: 40}}>
+                        <Text style={styles.title}>Interesses:</Text>
+                        <Text style={styles.value}>Matematica, Tecnologia, Ciencia</Text>
+                    </View>
+
+                    <Text style={styles.title}>Descrição</Text>
+                    <Text style={styles.value}>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio id voluptates commodi labore quod omnis possimus cupiditate quasi velit ipsam. Aliquid molestiae suscipit delectus, ipsa quod maxime adipisci nihil autem.</Text>
+
                 </View>
         </View>
     )

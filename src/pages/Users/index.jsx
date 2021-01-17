@@ -1,6 +1,7 @@
 import React from 'react'
 import { View, Text, Image, ScrollView } from 'react-native'
 import {RectButton} from 'react-native-gesture-handler'
+import {useNavigation} from '@react-navigation/native'
 
 import {Feather} from '@expo/vector-icons'
 
@@ -10,8 +11,14 @@ import styles from './styles'
 
 function Users({navigation}) {
 
+    const {navigate} = useNavigation();
+
     function openMenu() {
         navigation.openDrawer();
+    }
+
+    function handleGoToUserPage() {
+        navigate("Profile")
     }
 
     return (
@@ -29,7 +36,7 @@ function Users({navigation}) {
                 <View style={styles.scrollWrapper}>
                     <View style={styles.usersContainer}>
 
-                        <View style={styles.userWrapper}>            
+                        <RectButton style={styles.userWrapper} onPress={handleGoToUserPage}>            
                             <Image source={userImg} style={styles.userImg} />
                             
                             <View style={styles.userInfo}>
@@ -47,9 +54,9 @@ function Users({navigation}) {
                             </View>
 
                             <Feather name="heart" size={25} style={styles.icon}/>
-                        </View>
+                        </RectButton>
 
-                        <View style={styles.userWrapper}>            
+                        <RectButton style={styles.userWrapper} onPress={handleGoToUserPage}>            
                             <Image source={userImg} style={styles.userImg} />
                             
                             <View style={styles.userInfo}>
@@ -67,9 +74,9 @@ function Users({navigation}) {
                             </View>
 
                             <Feather name="heart" size={25} style={styles.icon}/>
-                        </View>
+                        </RectButton>
 
-                        <View style={styles.userWrapper}>            
+                        <RectButton style={styles.userWrapper} onPress={handleGoToUserPage}>            
                             <Image source={userImg} style={styles.userImg} />
                             
                             <View style={styles.userInfo}>
@@ -87,9 +94,9 @@ function Users({navigation}) {
                             </View>
 
                             <Feather name="heart" size={25} style={styles.icon}/>
-                        </View>
+                        </RectButton>
 
-                        <View style={styles.userWrapper}>            
+                        <RectButton style={styles.userWrapper} onPress={handleGoToUserPage}>            
                             <Image source={userImg} style={styles.userImg} />
                             
                             <View style={styles.userInfo}>
@@ -107,9 +114,9 @@ function Users({navigation}) {
                             </View>
 
                             <Feather name="heart" size={25} style={styles.icon}/>
-                        </View>
+                        </RectButton>
 
-                        <View style={styles.userWrapper}>            
+                        <RectButton style={styles.userWrapper} onPress={handleGoToUserPage}>            
                             <Image source={userImg} style={styles.userImg} />
                             
                             <View style={styles.userInfo}>
@@ -127,27 +134,7 @@ function Users({navigation}) {
                             </View>
 
                             <Feather name="heart" size={25} style={styles.icon}/>
-                        </View>
-
-                        <View style={styles.userWrapper}>            
-                            <Image source={userImg} style={styles.userImg} />
-                            
-                            <View style={styles.userInfo}>
-                                
-                                <Text style={styles.userTitle}>Eloa Santos</Text>
-
-                                <View style={styles.userDescription}>
-                                    <Text style={styles.descriptionTitle}>Interesses: </Text>
-                                    <Text style={styles.descriptionValue}>Matemática, asd sCiencia</Text>
-                                </View>
-                                <View style={styles.userDescription}>
-                                    <Text style={styles.descriptionTitle}>Local: </Text>
-                                    <Text style={styles.descriptionValue}>Pinheiros-SP</Text>
-                                </View>
-                            </View>
-
-                            <Feather name="heart" size={25} style={styles.icon}/>
-                        </View>
+                        </RectButton>
                         
                     </View>
                 </View>

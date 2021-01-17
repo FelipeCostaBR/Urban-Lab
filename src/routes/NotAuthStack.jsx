@@ -16,15 +16,14 @@ function NotAuthBottomNavigation() {
       <Navigator screenOptions={{headerShown: false}}>
 
         <Screen 
-          name="OnBoarding" 
-          component={OnBoarding} 
-        />
-
-        <Screen 
           name="Auth" 
           component={AuthDrawerNavigator} 
         />
 
+        <Screen 
+          name="OnBoarding" 
+          component={OnBoarding} 
+        />
 
         <Screen 
           name="Login" 

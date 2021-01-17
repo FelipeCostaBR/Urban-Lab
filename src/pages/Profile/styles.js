@@ -7,7 +7,7 @@ const styles = StyleSheet.create({
         backgroundColor: '#7140E6',
     },
     header: {
-        flex: 1,
+        flex: 2,
         width: '100%',
         backgroundColor: '#7140E6',
 
@@ -33,7 +33,7 @@ const styles = StyleSheet.create({
         alignSelf: 'flex-start',
     },
     userContainer: {
-        flex: 6,
+        flex: 3,
         backgroundColor: "#ffffff",
 
         width: "100%",
@@ -42,6 +42,7 @@ const styles = StyleSheet.create({
         borderTopRightRadius: 20,
 
         flexDirection: 'row',
+        alignItems: 'center'
     },
     userImg: {
         flex: 1,
@@ -71,6 +72,23 @@ const styles = StyleSheet.create({
     infoValue: {
         marginLeft: 5,
         width: 150,
+    },
+    othersInfo: {
+        flex: 12,
+        backgroundColor: "#ffffff",
+        width: '100%',
+
+        alignItems: 'flex-start',
+        padding: 20
+    },
+    title: {
+        fontWeight: '600',
+        fontSize: 18,
+        marginBottom: 5,
+        color: "#000"
+    },
+    value: {
+        lineHeight: 20
     }
 })
 
