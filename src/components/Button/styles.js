@@ -11,14 +11,15 @@ const styles = StyleSheet.create({
         alignItems: 'center',
     },
     textButton: {
-        fontSize: 15,
-        color: "#ffffff"
+        fontSize: 17,
+        fontWeight: '500',
+        color: "#000000"
     },
     primary: {
-        backgroundColor: '#E98901'
+        backgroundColor: '#04FD50'
     },
     secundary: {
-        backgroundColor: "#6B38E5"
+        backgroundColor: "#7140e6"
     }
 })
 

@@ -6,28 +6,32 @@ import {Image} from 'react-native'
 const {Navigator, Screen} = createStackNavigator();
 
 import Login from '../pages/Login'
-import Register from '../pages/Register'
+import StepOne from '../pages//Register/StepOne'
+import StepTwo from '../pages//Register/StepTwo'
 
 import logoImg from '../assets/images/logo.png'
 
-function Header() {
-  return (
-    <Image source={logoImg} style={{width: 150, resizeMode: 'contain', height: 120, marginLeft: 10}} />
-  )
-}
 
 function NotAuthBottomNavigation() {
   return (
     <NavigationContainer>
-      <Navigator>
+      <Navigator screenOptions={{headerShown: false}}>
+        
         <Screen 
-        name="Login" 
-        component={Login} 
-        options={{
-          header: Header
-        }}
+          name="Login" 
+          component={Login} 
         />
-        <Screen name="Register" component={Register} />
+        
+        <Screen
+          name="StepOne"
+          component={StepOne}
+        />
+        
+        <Screen
+          name="StepTwo"
+          component={StepTwo}
+        />
+        
       </Navigator>
     </NavigationContainer>
   );
