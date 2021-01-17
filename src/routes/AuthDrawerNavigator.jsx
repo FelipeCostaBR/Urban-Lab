@@ -11,7 +11,7 @@ export default function App() {
   return (
       <Navigator>
       
-      <Screen 
+        <Screen 
           name="Profile" 
           component={Profile} 
           options={{
