@@ -13,9 +13,12 @@ function StepTwo() {
     const {navigate} = useNavigation();
     const [selectedCategories, setSelectedCategories] = useState([]);
 
-    function addCategoryToSelectedCategories(category) {
-        
+    function addCategoryToSelectedCategories(categoryIndex) {
+        setSelectedCategories([...selectedCategories, categoryIndex]);
     }
+    
+    console.log(selectedCategories.find( category => category === 1))
+
 
     function handleRegisterUser() {
         navigate("StepThree")
@@ -35,30 +38,48 @@ function StepTwo() {
             <ScrollView style={styles.categoriesContainer}>
                 <View style={styles.categoriesWrapper}>
                     
-                    <TouchableOpacity style={[styles.category, styles.selected]}>
+                    <TouchableOpacity 
+                    style={[styles.category, selectedCategories.find( category => category === 1) ? styles.selected : styles.notSelected]} 
+                    onPress={() => addCategoryToSelectedCategories(1)}
+                    >
                         <Text style={styles.categoryText}>Português</Text>
                     </TouchableOpacity>
                     
-                    <TouchableOpacity style={[styles.category, styles.notSelected]}>
-                        <Text style={styles.categoryText}>Matematica</Text>
+                    <TouchableOpacity 
+                    style={[styles.category, selectedCategories.find( category => category === 2) ? styles.selected : styles.notSelected]} 
+                    onPress={() => addCategoryToSelectedCategories(2)}
+                    >
+                        <Text style={styles.categoryText}>Português</Text>
                     </TouchableOpacity>
                     
-                    <TouchableOpacity style={[styles.category, styles.notSelected]}>
-                        <Text style={styles.categoryText}>Ciencias</Text>
+                    <TouchableOpacity 
+                    style={[styles.category, selectedCategories.find( category => category === 3) ? styles.selected : styles.notSelected]} 
+                    onPress={() => addCategoryToSelectedCategories(3)}
+                    >
+                        <Text style={styles.categoryText}>Português</Text>
                     </TouchableOpacity>
                     
-                    <TouchableOpacity style={[styles.category, styles.notSelected]}>
-                        <Text style={styles.categoryText}>Ingles</Text>
+                    <TouchableOpacity 
+                    style={[styles.category, selectedCategories.find( category => category === 4) ? styles.selected : styles.notSelected]} 
+                    onPress={() => addCategoryToSelectedCategories(4)}
+                    >
+                        <Text style={styles.categoryText}>Português</Text>
                     </TouchableOpacity>
                     
-                    <TouchableOpacity style={[styles.category, styles.notSelected]}>
-                        <Text style={styles.categoryText}>Trabalho</Text>
+                    <TouchableOpacity 
+                    style={[styles.category, selectedCategories.find( category => category === 5) ? styles.selected : styles.notSelected]} 
+                    onPress={() => addCategoryToSelectedCategories(5)}
+                    >
+                        <Text style={styles.categoryText}>Português</Text>
                     </TouchableOpacity>
                     
-                    <TouchableOpacity style={[styles.category, styles.selected]}>
-                        <Text style={styles.categoryText}>Cultura</Text>
+                    <TouchableOpacity 
+                    style={[styles.category, selectedCategories.find( category => category === 6) ? styles.selected : styles.notSelected]} 
+                    onPress={() => addCategoryToSelectedCategories(6)}
+                    >
+                        <Text style={styles.categoryText}>Português</Text>
                     </TouchableOpacity>
-            
+                    
                 </View>
         
             </ScrollView>
