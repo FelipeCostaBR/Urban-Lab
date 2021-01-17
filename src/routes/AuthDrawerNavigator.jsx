@@ -5,11 +5,20 @@ const {Navigator, Screen} = createDrawerNavigator();
 
 import Events from '../pages/Events'
 import Users from '../pages/Users'
+import Profile from '../pages/Profile'
 
 export default function App() {
   return (
       <Navigator>
-        
+      
+      <Screen 
+          name="Profile" 
+          component={Profile} 
+          options={{
+            title: "Perfil"
+          }}
+        />
+
         <Screen 
           name="Events" 
           component={Events} 
@@ -25,6 +34,7 @@ export default function App() {
             title: "Usuários"
           }}
         />
+      
 
       </Navigator>
   );
