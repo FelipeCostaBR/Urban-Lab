@@ -10,7 +10,7 @@ import styles from './styles'
 function Events({navigation}) {
 
     function openMenu() {
-        // navigation.openDrawer();
+        navigation.openDrawer();
     }
 
     return (
