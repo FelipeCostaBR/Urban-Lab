@@ -30,7 +30,7 @@ function Landing() {
             <ScrollView style={styles.mainContent} showsVerticalScrollIndicator={false}>
                 <View style={styles.mainWrapper}>                
 
-                    <Text style={styles.title}>Bem vindo ao Urban Lab</Text>
+                    <Text style={styles.title}>Bem vindo</Text>
 
                     <Text style={styles.subTitle}>Contrary to popular belief, Lorem Ipsum is not simply random text.</Text>
 
