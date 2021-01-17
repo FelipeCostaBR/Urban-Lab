@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import { View, ActivityIndicator, Image } from 'react-native';
-import MapView, { PROVIDER_GOOGLE, Marker  } from 'react-native-maps';
+import { View, ActivityIndicator, Image, Text } from 'react-native';
+import MapView, { PROVIDER_GOOGLE, Marker, Callout  } from 'react-native-maps';
+import {useNavigation} from '@react-navigation/native'
 
 import * as Location from 'expo-location';
 import * as Permissions from 'expo-permissions'
@@ -8,15 +9,9 @@ import userImg from '../../assets/images/user.jpg';
 
 import styles from './styles'
 
-function MarkerIcon() {
-    return (
-        <View style={{width: 50, height: 50}}>
-            <Image source={userImg} style={{resizeMode: 'cover', borderRadius: 50, width: '100%', height: '100%'}} />
-        </View>
-    )
-}
-
 function Map() {
+
+    const {navigate} = useNavigation();
 
   const [permissions, askPermission] = Permissions.usePermissions("location", {get: true, ask: true})
 
@@ -37,6 +32,10 @@ function Map() {
   function updateCurrentLocation(lat, lng) {
     setCurrentLatitude(lat)
     setCurrentLongitude(lng)
+  }
+
+  function handleNavigateToOrphanageUserDetail() {
+    navigate('Profile')
   }
 
   if(!currentLatitude || !currentLongitude) {
@@ -62,8 +61,23 @@ function Map() {
         coordinate={{
           latitude: currentLatitude,
           longitude: currentLongitude
-        }} >
-          <MarkerIcon />
+        }}
+        calloutAnchor={{
+            x: 2.7,
+            y: 0.9
+        }} 
+        >
+            <View style={{width: 50, height: 50}}>
+                <Image source={userImg} style={{resizeMode: 'cover', borderRadius: 50, width: '100%', height: '100%'}} />
+            </View>
+           
+            <Callout tooltip onPress={() => handleNavigateToOrphanageUserDetail()}>
+                <View style={styles.calloutContainer}>
+                    <Text style={styles.calloutText}>Beatriz Lima</Text>
+                    <Text style={styles.calloutText}>Matemática e Portugues</Text>
+                </View>
+            </Callout>
+
         </Marker>
 
       </MapView>
