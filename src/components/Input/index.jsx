@@ -3,9 +3,9 @@ import { TextInput } from 'react-native'
 
 import styles from './styles'
 
-function Input() {
+function Input({...props}) {
     return (
-        <TextInput style={styles.input} />
+        <TextInput style={styles.input} {...props} />
     )
 }
 

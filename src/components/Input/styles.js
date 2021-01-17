@@ -2,7 +2,7 @@ import {StyleSheet} from 'react-native'
 
 const styles = StyleSheet.create({
     input: {
-        borderColor: '#000',
+        backgroundColor: '#fff',
         borderWidth: 1,
         borderRadius: 20,
         

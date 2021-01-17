@@ -7,7 +7,7 @@ const styles = StyleSheet.create({
         
         alignItems: 'center',
     },
-    logo:{
+    logo: {
         width: 130,
         height: 80,
         resizeMode: 'contain',
@@ -26,7 +26,7 @@ const styles = StyleSheet.create({
         justifyContent: 'flex-start'
     },
     title: {
-        color: "#ffffff",
+        color: "#fff",
         fontSize: 36,
         textAlign: "center",
 
@@ -39,10 +39,10 @@ const styles = StyleSheet.create({
         
         width: '100%',
         textAlign: 'left',
-        color: "#ffffff"
+        color: "#fff"
     },
     forgetPasswordText: {
-        color: '#04FD50',
+        color: '#6B38E5',
 
         textAlign: 'center',
         marginTop: 10,
