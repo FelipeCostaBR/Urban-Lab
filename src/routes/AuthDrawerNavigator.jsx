@@ -7,6 +7,7 @@ const {Navigator, Screen} = createDrawerNavigator();
 // import Events from '../pages/Events'
 import Users from '../pages/Users'
 import Profile from '../pages/Profile'
+import Map from '../pages/MapScreen'
 
 export default function App() {
   return (
@@ -19,6 +20,14 @@ export default function App() {
         inactiveTintColor: "#fff"
       }}
       >
+
+        <Screen 
+          name="Map" 
+          component={Map} 
+          options={{
+            title: "Mapa",
+          }}
+        />
 
         <Screen 
           name="Profile" 
