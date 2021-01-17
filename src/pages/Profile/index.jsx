@@ -16,8 +16,8 @@ function Profile({navigation}) {
         <View style={styles.container}>
 
             <View style={styles.header}>
-                <RectButton style={styles.menu} onPress={styles.menu}> 
-                 <Image source={menuImg} style={styles.menuImg} />
+                <RectButton style={styles.menu} onPress={openMenu}> 
+                    <Image source={menuImg} style={styles.menuImg} />
                 </RectButton>
             </View>
 

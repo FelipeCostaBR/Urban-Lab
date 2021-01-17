@@ -1,5 +1,6 @@
 import React from 'react';
-import { createDrawerNavigator } from '@react-navigation/drawer';
+import {SafeAreaView, ScrollView, Dimensions} from 'react-native'
+import { createDrawerNavigator, DrawerItem } from '@react-navigation/drawer';
 
 const {Navigator, Screen} = createDrawerNavigator();
 
@@ -9,13 +10,20 @@ import Profile from '../pages/Profile'
 
 export default function App() {
   return (
-      <Navigator>
-      
+      <Navigator
+      drawerStyle={{
+        backgroundColor: "#3A3C3A",
+      }}
+      drawerContentOptions={{
+        activeTintColor: "#05FD51"
+      }}
+      >
+    
         <Screen 
           name="Profile" 
           component={Profile} 
           options={{
-            title: "Perfil"
+            title: "Perfil",
           }}
         />
 

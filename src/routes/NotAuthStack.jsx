@@ -25,6 +25,7 @@ function NotAuthBottomNavigation() {
           component={AuthDrawerNavigator} 
         />
 
+
         <Screen 
           name="Login" 
           component={Login} 
