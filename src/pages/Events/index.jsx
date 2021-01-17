@@ -41,9 +41,15 @@ function Events({navigation}) {
                                 <Text style={styles.eventTitle}>Nome do Evento</Text>
 
                                 <View style={styles.eventDescription}>
+                                    <Text style={styles.descriptionTitle}>Data:</Text>
+                                    <Text style={styles.descriptionValue}>12/01/2020</Text>
+                                </View>
+
+                                <View style={styles.eventDescription}>
                                     <Text style={styles.descriptionTitle}>Horário:</Text>
                                     <Text style={styles.descriptionValue}>12:00</Text>
                                 </View>
+
                                 <View style={styles.eventDescription}>
                                     <Text style={styles.descriptionTitle}>Local: </Text>
                                     <Text style={styles.descriptionValue}>Pinheiros-SP</Text>
@@ -52,7 +58,7 @@ function Events({navigation}) {
 
                             <Feather name="heart" size={25} style={styles.icon}/>
                         </View>
-
+                        
                         <View style={styles.eventWrapper}>            
                             <Image source={carouselImgOne} style={styles.eventImg} />
                             
@@ -61,9 +67,15 @@ function Events({navigation}) {
                                 <Text style={styles.eventTitle}>Nome do Evento</Text>
 
                                 <View style={styles.eventDescription}>
+                                    <Text style={styles.descriptionTitle}>Data:</Text>
+                                    <Text style={styles.descriptionValue}>12/01/2020</Text>
+                                </View>
+
+                                <View style={styles.eventDescription}>
                                     <Text style={styles.descriptionTitle}>Horário:</Text>
                                     <Text style={styles.descriptionValue}>12:00</Text>
                                 </View>
+
                                 <View style={styles.eventDescription}>
                                     <Text style={styles.descriptionTitle}>Local: </Text>
                                     <Text style={styles.descriptionValue}>Pinheiros-SP</Text>
@@ -72,7 +84,7 @@ function Events({navigation}) {
 
                             <Feather name="heart" size={25} style={styles.icon}/>
                         </View>
-
+                        
                         <View style={styles.eventWrapper}>            
                             <Image source={carouselImgOne} style={styles.eventImg} />
                             
@@ -81,9 +93,15 @@ function Events({navigation}) {
                                 <Text style={styles.eventTitle}>Nome do Evento</Text>
 
                                 <View style={styles.eventDescription}>
+                                    <Text style={styles.descriptionTitle}>Data:</Text>
+                                    <Text style={styles.descriptionValue}>12/01/2020</Text>
+                                </View>
+
+                                <View style={styles.eventDescription}>
                                     <Text style={styles.descriptionTitle}>Horário:</Text>
                                     <Text style={styles.descriptionValue}>12:00</Text>
                                 </View>
+
                                 <View style={styles.eventDescription}>
                                     <Text style={styles.descriptionTitle}>Local: </Text>
                                     <Text style={styles.descriptionValue}>Pinheiros-SP</Text>
@@ -92,7 +110,7 @@ function Events({navigation}) {
 
                             <Feather name="heart" size={25} style={styles.icon}/>
                         </View>
-
+                        
                         <View style={styles.eventWrapper}>            
                             <Image source={carouselImgOne} style={styles.eventImg} />
                             
@@ -101,9 +119,15 @@ function Events({navigation}) {
                                 <Text style={styles.eventTitle}>Nome do Evento</Text>
 
                                 <View style={styles.eventDescription}>
+                                    <Text style={styles.descriptionTitle}>Data:</Text>
+                                    <Text style={styles.descriptionValue}>12/01/2020</Text>
+                                </View>
+
+                                <View style={styles.eventDescription}>
                                     <Text style={styles.descriptionTitle}>Horário:</Text>
                                     <Text style={styles.descriptionValue}>12:00</Text>
                                 </View>
+
                                 <View style={styles.eventDescription}>
                                     <Text style={styles.descriptionTitle}>Local: </Text>
                                     <Text style={styles.descriptionValue}>Pinheiros-SP</Text>
@@ -112,7 +136,7 @@ function Events({navigation}) {
 
                             <Feather name="heart" size={25} style={styles.icon}/>
                         </View>
-
+                        
                         <View style={styles.eventWrapper}>            
                             <Image source={carouselImgOne} style={styles.eventImg} />
                             
@@ -121,29 +145,15 @@ function Events({navigation}) {
                                 <Text style={styles.eventTitle}>Nome do Evento</Text>
 
                                 <View style={styles.eventDescription}>
-                                    <Text style={styles.descriptionTitle}>Horário:</Text>
-                                    <Text style={styles.descriptionValue}>12:00</Text>
+                                    <Text style={styles.descriptionTitle}>Data:</Text>
+                                    <Text style={styles.descriptionValue}>12/01/2020</Text>
                                 </View>
-                                <View style={styles.eventDescription}>
-                                    <Text style={styles.descriptionTitle}>Local: </Text>
-                                    <Text style={styles.descriptionValue}>Pinheiros-SP</Text>
-                                </View>
-                            </View>
-
-                            <Feather name="heart" size={25} style={styles.icon}/>
-                        </View>
-
-                        <View style={styles.eventWrapper}>            
-                            <Image source={carouselImgOne} style={styles.eventImg} />
-                            
-                            <View style={styles.eventInfo}>
-                                
-                                <Text style={styles.eventTitle}>Nome do Evento</Text>
 
                                 <View style={styles.eventDescription}>
                                     <Text style={styles.descriptionTitle}>Horário:</Text>
                                     <Text style={styles.descriptionValue}>12:00</Text>
                                 </View>
+
                                 <View style={styles.eventDescription}>
                                     <Text style={styles.descriptionTitle}>Local: </Text>
                                     <Text style={styles.descriptionValue}>Pinheiros-SP</Text>

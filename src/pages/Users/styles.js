@@ -55,42 +55,42 @@ const styles = StyleSheet.create({
         width: 345,
         maxHeight: 180,
     },
-    eventsContainer: {
+    usersContainer: {
         width: '100%',
         backgroundColor: "#222322",
     },
-    eventWrapper: {
+    userWrapper: {
         backgroundColor: "#fff",
 
-        width: 340,
-        height: 85,
+        width: 338,
+        height: 100,
 
         flexDirection: 'row',
         marginTop: 15,
         marginBottom: 10
     },
-    eventImg: {
+    userImg: {
         width: 85,
         height: '100%',
+        borderRadius: 50
     },
-    eventInfo: {
+    userInfo: {
         paddingLeft: 10,
         paddingRight: 10,
         paddingTop: 5,
         paddingBottom: 5,
         justifyContent: 'space-between',
-
     },
-    eventTitle: {
+    userTitle: {
         fontSize: 15,
         fontWeight: 'bold'
     },
-    eventDescription: {
+    userDescription: {
         flexDirection: 'row',
     },
     descriptionTitle: {
         fontWeight: 'bold',
-        width: 70,
+        width: 85,
         fontSize: 15
     },
     descriptionValue: {
@@ -99,9 +99,8 @@ const styles = StyleSheet.create({
     icon: {
         textAlign: 'center',
         alignSelf: 'center',
-        width: '20%',
+        width: '10%',
     }
-
     
 })
 
