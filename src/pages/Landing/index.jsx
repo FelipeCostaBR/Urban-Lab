@@ -14,6 +14,7 @@ import CTOImg from '../../assets/images/CTO.png'
 import CFOImg from '../../assets/images/CFO.png'
 import PersonalDevelopmentImg from '../../assets/images/PersonalDevelopment.png'
 
+
 function Landing() {
 
     const {navigate} = useNavigation()
