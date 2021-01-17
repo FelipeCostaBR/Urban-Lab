@@ -32,6 +32,11 @@ function Profile({navigation}) {
                             <Text style={styles.infoTitle}>Localização:</Text>
                             <Text style={styles.infoValue}>Camaçari-BA</Text>
                         </View>
+
+                        <View style={styles.userInfo}>
+                            <Text style={styles.infoTitle}>Favoritado:</Text>
+                            <Text style={styles.infoValue}> 2 </Text>
+                        </View>
                         
                     </View>
             </View>
@@ -43,9 +48,11 @@ function Profile({navigation}) {
                         <Text style={styles.value}>Matematica, Tecnologia, Ciencia</Text>
                     </View>
 
+                    <View style={{marginBottom: 40}}>
                     <Text style={styles.title}>Descrição</Text>
                     <Text style={styles.value}>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio id voluptates commodi labore quod omnis possimus cupiditate quasi velit ipsam. Aliquid molestiae suscipit delectus, ipsa quod maxime adipisci nihil autem.</Text>
-
+                    </View>
+                    
                 </View>
         </View>
     )

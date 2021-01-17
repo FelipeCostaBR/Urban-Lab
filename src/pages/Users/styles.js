@@ -34,6 +34,19 @@ const styles = StyleSheet.create({
         color: "#ffffff",
         marginTop: -10
     },
+    pickerContainer: {
+        marginTop: 20,
+        flexDirection: "row",
+        width: '100%',
+        alignItems: 'center',
+        justifyContent: 'center'
+    },
+    pickerName:{
+        color: "#fff",
+        fontSize: 18,
+        fontWeight: "500",
+        marginRight: 10
+    },
     scroll: {
         flex: 1,
         backgroundColor: "#222322",

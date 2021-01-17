@@ -18,7 +18,7 @@ function StepTwo() {
     }
 
     function handleRegisterUser() {
-        navigate("Auth")
+        navigate("StepThree")
     }
 
     return (

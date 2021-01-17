@@ -15,7 +15,8 @@ export default function App() {
         backgroundColor: "#3A3C3A",
       }}
       drawerContentOptions={{
-        activeTintColor: "#05FD51"
+        activeTintColor: "#05FD51",
+        inactiveTintColor: "#fff"
       }}
       >
 
