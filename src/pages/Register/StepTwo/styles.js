@@ -6,7 +6,7 @@ const styles = StyleSheet.create({
         alignItems: 'center',
     },
     header: {
-        flex: 2,
+        flex: 3,
         width: '100%',
         backgroundColor: '#7140E6',
         paddingLeft: 20,
@@ -41,7 +41,6 @@ const styles = StyleSheet.create({
         paddingRight: 20,
 
         backgroundColor: "#222322",
-        marginTop: -30
     },
     categoriesWrapper: {
         justifyContent: 'space-evenly',
@@ -69,6 +68,12 @@ const styles = StyleSheet.create({
     },
     notSelected: {
         backgroundColor: "#ffffff",
+    },
+    footer: {
+        flex: 1, 
+        backgroundColor: '#222322', 
+        width: '100%',
+        alignItems: 'center'
     }
     
 })
