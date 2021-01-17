@@ -30,7 +30,7 @@ function StepTwo() {
             <View style={styles.header}>
                 <Image source={logoImg} style={styles.logo} />
 
-                <Text style={styles.title}>Bem Vindo "Nome da Pessoa"</Text>
+                <Text style={styles.title}>Bem Vindo Rafael</Text>
                 <Text style={styles.subTitle}>Para começar nos diga qual seus interesses</Text>
 
             </View>
@@ -49,35 +49,35 @@ function StepTwo() {
                     style={[styles.category, selectedCategories.find( category => category === 2) ? styles.selected : styles.notSelected]} 
                     onPress={() => addCategoryToSelectedCategories(2)}
                     >
-                        <Text style={styles.categoryText}>Português</Text>
+                        <Text style={styles.categoryText}>Inglês</Text>
                     </TouchableOpacity>
                     
                     <TouchableOpacity 
                     style={[styles.category, selectedCategories.find( category => category === 3) ? styles.selected : styles.notSelected]} 
                     onPress={() => addCategoryToSelectedCategories(3)}
                     >
-                        <Text style={styles.categoryText}>Português</Text>
+                        <Text style={styles.categoryText}>Inglês</Text>
                     </TouchableOpacity>
                     
                     <TouchableOpacity 
                     style={[styles.category, selectedCategories.find( category => category === 4) ? styles.selected : styles.notSelected]} 
                     onPress={() => addCategoryToSelectedCategories(4)}
                     >
-                        <Text style={styles.categoryText}>Português</Text>
+                        <Text style={styles.categoryText}>História</Text>
                     </TouchableOpacity>
                     
                     <TouchableOpacity 
                     style={[styles.category, selectedCategories.find( category => category === 5) ? styles.selected : styles.notSelected]} 
                     onPress={() => addCategoryToSelectedCategories(5)}
                     >
-                        <Text style={styles.categoryText}>Português</Text>
+                        <Text style={styles.categoryText}>Tecnologia</Text>
                     </TouchableOpacity>
                     
                     <TouchableOpacity 
                     style={[styles.category, selectedCategories.find( category => category === 6) ? styles.selected : styles.notSelected]} 
                     onPress={() => addCategoryToSelectedCategories(6)}
                     >
-                        <Text style={styles.categoryText}>Português</Text>
+                        <Text style={styles.categoryText}>Esportes</Text>
                     </TouchableOpacity>
                     
                 </View>

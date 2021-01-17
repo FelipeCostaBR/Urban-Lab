@@ -18,7 +18,7 @@ function MapScreen({navigation}) {
             <RectButton style={styles.menuContainer} onPress={openMenu}>
                 <Image source={menuImg} style={styles.menu} />
             </RectButton>
-            
+
 
             <View style={{flex: 1}}>
                 <Map /> 
