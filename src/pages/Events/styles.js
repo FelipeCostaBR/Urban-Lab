@@ -4,58 +4,99 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         alignItems: 'center',
+        backgroundColor: '#7140E6',
     },
     header: {
-        flex: 2,
         width: '100%',
-        backgroundColor: '#7140E6',
         paddingLeft: 20,
         paddingRight: 20,
-        zIndex: -1
+        paddingBottom: 35
     },
-    logo: {
-        width: 130,
-        height: 80,
+    menu: {
+        width: 50,
+        height: 50,
+
+        marginTop: 10,
+        marginLeft: -10,
+
+        alignItems: 'center',
+        justifyContent: 'center',
+    },
+    menuImg: {
+        width: 30,
+        height: 50,
         resizeMode: 'contain',
         alignSelf: 'flex-start',
-        
-        marginTop: 10,
-        marginLeft: -20
     },
     title: {
-        fontSize: 25,
+        fontSize: 30,
         textAlign: 'center',
         color: "#ffffff",
+        marginTop: -10
+    },
+    scroll: {
+        flex: 1,
+        backgroundColor: "#222322",
+        width: '100%',
+        paddingLeft: 20,
+        paddingRight: 20,
+        marginTop: -15,
+        borderTopLeftRadius: 25,
+        borderTopRightRadius: 25,
     },
     carousel: {
+        height: 200,
+        width: '100%',
 
+        alignItems: "center"
     },
-    carouselImg: {
-
+    carouselImg: { 
+        resizeMode: 'cover',
+        width: 345,
+        maxHeight: 180,
     },
     eventsContainer: {
-
+        width: '100%',
+        backgroundColor: "#222322",
     },
     eventWrapper: {
+        backgroundColor: "#fff",
 
+        width: 345,
+        height: 85,
+
+        flexDirection: 'row',
+        marginTop: 15,
+        marginBottom: 10
     },
     eventImg: {
-
+        width: 100,
+        height: '100%',
     },
     eventInfo: {
+        paddingLeft: 10,
+        paddingRight: 10,
+        paddingTop: 5,
+        paddingBottom: 5,
+        justifyContent: 'space-between',
 
     },
     eventTitle: {
-
+        fontSize: 15,
+        fontWeight: 'bold'
     },
     eventDescription: {
-
+        flexDirection: 'row',
     },
     descriptionTitle: {
-
+        fontWeight: 'bold',
+        width: 70,
+        fontSize: 15
     },
-    descriptionValue: {
-        
+    icon: {
+        textAlign: 'center',
+        alignSelf: 'center',
+        width: '20%',
     }
 
     
