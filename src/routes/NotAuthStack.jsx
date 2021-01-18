@@ -22,15 +22,15 @@ function NotAuthBottomNavigation() {
         />
 
         <Screen 
+          name="Auth" 
+          component={AuthDrawerNavigator} 
+        />   
+
+        <Screen 
           name="Login" 
           component={Login} 
         />
   
-        <Screen 
-          name="Auth" 
-          component={AuthDrawerNavigator} 
-        />
-        
         <Screen
           name="StepOne"
           component={StepOne}

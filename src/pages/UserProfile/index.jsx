@@ -1,23 +1,26 @@
 import React from 'react'
 import { View, Text, Image } from 'react-native'
 import {RectButton} from 'react-native-gesture-handler'
+import {Feather} from '@expo/vector-icons'
 
-import userImg from '../../assets/images/user.jpg'
+import Button from '../../components/Button'
+
+import userImg from '../../assets/images/user3.png'
 import menuImg from '../../assets/images/menu.png'
 import styles from './styles'
 
-function Profile({navigation}) {
+function UserProfile({navigation}) {
 
-    function openMenu() {
-        navigation.openDrawer();
+    function goBack() {
+        navigation.goBack()
     }
 
     return (
         <View style={styles.container}>
 
             <View style={styles.header}>
-                <RectButton style={styles.menu} onPress={openMenu}> 
-                    <Image source={menuImg} style={styles.menuImg} />
+                <RectButton style={styles.menu} onPress={goBack}> 
+                    <Feather name="arrow-left" size={40} style={styles.menuImg} color="#04FD50" />
                 </RectButton>
             </View>
 
@@ -26,16 +29,16 @@ function Profile({navigation}) {
                     
                     <View style={styles.userDescription}>
                 
-                        <Text style={styles.infoTitle}>Maria Santos</Text>
+                        <Text style={styles.infoTitle}>Tom Holland</Text>
 
                         <View style={styles.userInfo}>
                             <Text style={styles.infoTitle}>Localização:</Text>
-                            <Text style={styles.infoValue}>Aruja-SP</Text>
+                            <Text style={styles.infoValue}>Arujá-SP</Text>
                         </View>
 
                         <View style={styles.userInfo}>
                             <Text style={styles.infoTitle}>Favoritado:</Text>
-                            <Text style={styles.infoValue}> 18 </Text>
+                            <Text style={styles.infoValue}> 126 </Text>
                         </View>
                         
                     </View>
@@ -48,14 +51,20 @@ function Profile({navigation}) {
                         <Text style={styles.value}>Matematica, Tecnologia, Ciencia</Text>
                     </View>
 
-                    <View style={{marginBottom: 40}}>
+                    <View style={{marginBottom: 60}}>
                     <Text style={styles.title}>Descrição</Text>
-                    <Text style={styles.value}>Sou estudante do ensino médio e amo ensinar e aprender com as pessoas. Gosto muito da area de matematica e tecnologia e pretendo me tornar uma futura engenheira!! </Text>
+                    <Text style={styles.value}>Ator, dançarino e cantor. E estou aqui para trazer educação e cultura para os jovens com o objetivo de aumentar as perspectivas de vida e se conectarem mais com as pessoas.</Text>
                     </View>
                     
+                    <View style={{alignItems: 'center', justifyContent: 'center', width: '100%'}}>
+                    <Button text="Chat" />
+                    </View>
+                    
+
                 </View>
+
         </View>
     )
 }
 
-export default Profile
+export default UserProfile

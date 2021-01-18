@@ -7,7 +7,9 @@ import RNPickerSelect from 'react-native-picker-select';
 
 import {Feather} from '@expo/vector-icons'
 
-import userImg from '../../assets/images/user.jpg'
+import userOne from '../../assets/images/user.jpg'
+import userTwo from '../../assets/images/user2.jpeg'
+import userThree from '../../assets/images/user3.png'
 import menuImg from '../../assets/images/menu.png'
 import styles from './styles'
 
@@ -20,7 +22,7 @@ function Users({navigation}) {
     }
 
     function handleGoToUserPage() {
-        navigate("Profile")
+        navigate("UserProfile")
     }
 
     return (
@@ -48,10 +50,12 @@ function Users({navigation}) {
                     }}
                     onValueChange={(value) => console.log(value)}
                     placeholder="Categorias"
+                    value=''
                     items={[
-                        { label: 'Football', value: 'football', key: 1 },
-                        { label: 'Baseball', value: 'baseball', key: 2 },
-                        { label: 'Hockey', value: 'hockey', key: 3 },
+                        { label: 'Matematica', value: 'football', key: 1 },
+                        { label: 'Portugues', value: 'baseball', key: 2 },
+                        { label: 'Tecnologia', value: 'hockey', key: 3 },
+                        { label: 'Ingles', value: 'hockey', key: 4 },
                     ]}
                     />
                 </View>
@@ -62,15 +66,55 @@ function Users({navigation}) {
                     <View style={styles.usersContainer}>
 
                         <RectButton style={styles.userWrapper} onPress={handleGoToUserPage}>            
-                            <Image source={userImg} style={styles.userImg} />
+                            <Image source={userOne} style={styles.userImg} />
                             
                             <View style={styles.userInfo}>
                                 
-                                <Text style={styles.userTitle}>Eloa Santos</Text>
+                                <Text style={styles.userTitle}>Eloa Fernandes</Text>
 
                                 <View style={styles.userDescription}>
                                     <Text style={styles.descriptionTitle}>Interesses: </Text>
-                                    <Text style={styles.descriptionValue}>Matemática, asd sCiencia</Text>
+                                    <Text style={styles.descriptionValue}>Ingles e Portugues</Text>
+                                </View>
+                                <View style={styles.userDescription}>
+                                    <Text style={styles.descriptionTitle}>Local: </Text>
+                                    <Text style={styles.descriptionValue}>Pinheiros-SP</Text>
+                                </View>
+                            </View>
+
+                            <Feather name="heart" size={25} style={styles.icon}/>
+                        </RectButton>
+
+                        <RectButton style={styles.userWrapper} onPress={handleGoToUserPage}>            
+                            <Image source={userTwo} style={styles.userImg} />
+                            
+                            <View style={styles.userInfo}>
+                                
+                                <Text style={styles.userTitle}>Fabrcio Souza</Text>
+
+                                <View style={styles.userDescription}>
+                                    <Text style={styles.descriptionTitle}>Interesses: </Text>
+                                    <Text style={styles.descriptionValue}>Tecnologia e Matematica</Text>
+                                </View>
+                                <View style={styles.userDescription}>
+                                    <Text style={styles.descriptionTitle}>Local: </Text>
+                                    <Text style={styles.descriptionValue}>Aruja-SP</Text>
+                                </View>
+                            </View>
+
+                            <Feather name="heart" size={25} style={styles.icon}/>
+                        </RectButton>
+
+                        <RectButton style={styles.userWrapper} onPress={handleGoToUserPage}>            
+                            <Image source={userThree} style={styles.userImg} />
+                            
+                            <View style={styles.userInfo}>
+                                
+                                <Text style={styles.userTitle}>Tom Holland</Text>
+
+                                <View style={styles.userDescription}>
+                                    <Text style={styles.descriptionTitle}>Interesses: </Text>
+                                    <Text style={styles.descriptionValue}>Matemática e Ciencias</Text>
                                 </View>
                                 <View style={styles.userDescription}>
                                     <Text style={styles.descriptionTitle}>Local: </Text>

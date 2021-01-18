@@ -1,12 +1,12 @@
 import React from 'react';
-import {SafeAreaView, ScrollView, Dimensions} from 'react-native'
-import { createDrawerNavigator, DrawerItem } from '@react-navigation/drawer';
+import { createDrawerNavigator } from '@react-navigation/drawer';
 
 const {Navigator, Screen} = createDrawerNavigator();
 
 // import Events from '../pages/Events'
 import Users from '../pages/Users'
 import Profile from '../pages/Profile'
+import UserProfile from '../pages/UserProfile'
 import Map from '../pages/MapScreen'
 
 export default function App() {
@@ -50,6 +50,14 @@ export default function App() {
           component={Users} 
           options={{
             title: "Usuários"
+          }}
+        />
+        
+        <Screen 
+          name="UserProfile" 
+          component={UserProfile} 
+          options={{
+            title: "Logout"
           }}
         />
       
