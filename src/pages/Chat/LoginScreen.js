@@ -15,7 +15,7 @@ export default class LoginScreen extends Component {
   };
 
   continue = () => {
-    this.props.navigation.navigate("chat", { name: this.state.name });
+    this.props.navigation.navigate("Chat", { name: this.state.name });
   };
 
   render() {
@@ -24,7 +24,7 @@ export default class LoginScreen extends Component {
         <View style={styles.circle} />
         <View style={{ marginTop: 64 }}>
           <Image
-            source={require("../../assets/images/logo.jpeg")}
+            source={require("../../assets/images/logo.png")}
             style={{ width: 100, height: 100, alignSelf: "center" }}
           />
         </View>
@@ -83,6 +83,7 @@ const styles = StyleSheet.create({
       height: 70,
       borderRadius: 70 / 2,
       backgroundColor:"#9075E3",
+      alignItems: "center",
       justifyContent: "center"
   }
 });

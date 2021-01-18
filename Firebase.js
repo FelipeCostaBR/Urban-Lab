@@ -19,15 +19,16 @@ class Fire {
         measurementId: "G-23J90VC870",
       });
     }
-
-    checkAuth = () => {
-      firebase.auth().onAuthStateChanged((user) => {
-        if (!user) {
-          firebase.auth().sighInAnonymously();
-        }
-      });
-    };
   };
+
+  checkAuth = () => {
+    firebase.auth().onAuthStateChanged((user) => {
+      if (!user) {
+        firebase.auth().sighInAnonymously();
+      }
+    });
+  };
+
   send = (messages) => {
     messages.forEach((item) => {
       const message = {
@@ -43,7 +44,7 @@ class Fire {
   parse = (message) => {
     const { user, text, timestamp } = message.val();
     const { key: _id } = message;
-    const createdAt = new DataCue(timestamp);
+    const createdAt = new Date(timestamp);
 
     return {
       _id,
@@ -65,7 +66,7 @@ class Fire {
     return firebase.database().ref("message");
   }
 
-  get db() {
+  get uid() {
     return firebase.auth().currentUser || {}.uid;
   }
 }
